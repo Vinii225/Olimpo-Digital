@@ -1,0 +1,72 @@
+* {
+  font-family: "Times New Roman", Times, serif;
+}
+/* gradiência / plano de funod do site*/
+header {
+    background: linear-gradient(to bottom,#d2d1d1 31%, #858585 85%);
+  }
+
+body {
+    background: linear-gradient(to bottom, #ffff 40%, #b3b6b7 100%);;
+}
+
+
+
+/*   Barra de Navegação do site principal, será usada para todas as páginas  */
+.topic {
+  text-align: left;
+}
+header,
+.conceito,
+.cards {
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
+header a:hover {
+  text-decoration: underline;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+head,
+nav {
+  display: flex;
+}
+
+/* Imagem */
+
+/* Conceito */
+
+/* Esta parte está os cards de mitologias */
+.card {
+  border: 1px solid black;
+  margin: 50px;
+  box-shadow: 10px 5px 5px rgb(85, 79, 79);
+}
+.cards {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+  padding: auto;
+}
+
+/*   Esta parte está o rodapé da página principal do site.   */
+footer,
+.ifpb {
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: auto;
+}
+
+.ifpb:hover {
+  color: brown;
+}
