@@ -15,7 +15,6 @@ O **Olimpo Digital** é um projeto desenvolvido por um grupo de alunos do curso 
 
 ## Contato e Redes Sociais
 Acompanhe nossas atualizações e interaja conosco:
-- 🌍 Site: [Em breve]
 - 📷 Instagram: [Olimpo Digital](#)
 - 📘 Facebook: [Olimpo Digital](#)
 
