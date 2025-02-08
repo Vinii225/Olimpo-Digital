@@ -1,82 +1,242 @@
-
-  *{
-    font-family: "Merriweather", serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-body{
-    margin: 0px;
+* {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-    /* NAV BAR */
+
+body {
+  margin: 0px;
+}
+.titulo{
+  flex-basis: 100%;
+  text-align: center;
+  margin: 20px;
+}
+/* NAV BAR */
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #EBEBEB;
-    padding: 3px;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebebeb;
+  padding: 3px;
+}
+
+nav h1 {
+  margin-left: 20px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* IMAGEM ABAIXO DO NAV*/
+.img1 {
+  width: 100%;
+  height: 800px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* SEÇÃO INICIO */
+#inicio {
+  background-color: #ebebeb;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+}
+
+.welcome {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* SEÇÃO SOBRE */
+
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.sobre div{
+    margin: 30px 30px;
+}
+
+.sobre p {
+  margin: 0, 0, 20px;
+  max-width: 800px;
+  text-align: justify;
+}
+.sobre iframe{
+    width: 100%;
+    height: 400px;
+}
+/* CARDS FOR GODS / HISTORY */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 200px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+  margin: 16px 0 8px;
+}
+
+.card p {
+  color: #666;
+}
+
+
+
+
+
+ /* FOOTER */
+
+.footer1{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  background-color: #EBEBEB;
+}
+
+/* SOBRE NÓS */
+
+.sobrenos{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sobrenos p{
+  margin: 0 20px;
+}
+
+
+
+
+/* FOOTER ICONS */
+
+.social ul{
+  display: flex;
+ padding: 0px;
+ list-style: none;
+  color: black;
+}
+.social h1{
+  flex-basis: 100%;
+}
+
+.social i{
+  color: black;
+  font-size: 32px;
+  margin: 0 10px;
+}
+
+.social i:hover{
+  color: #666;
+}
+
+/* FOOTER IFPB */
+.footer2{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  color: white;
+  background-color: black;
+}
+
+.footer2 a{
+  color: white;
+  text-decoration: none;
+}
+
+.footer2 a:hover{
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
   nav ul {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
+    display: none;
+  }
+  nav ul li {
+    margin-right: 0;
+  }
+  nav h1 {
+    margin-left: 0;
+  }
+  nav {
     justify-content: center;
   }
-  
-  nav ul li {
-    margin-right: 30px;
+  .img1 {
+    height: 400px;
   }
-  nav ul li h1{
-    margin-left: 30px;
+  .sobre div{
+    margin: 30px 0;
   }
-  
-  nav ul li a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    text-decoration: underline;
-  }
-
-/* Full-width image */
-    .img1 {
-    width: 100%;
-    height: auto;
-  }
-  
-
-
-    /* CARDS FOR GODS / HISTORY */
-  
   .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
   }
-  
   .card {
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 16px;
-    width: 200px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
   }
-  
-  .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px 8px 0 0;
-  }
-  
-  .card h3 {
-    margin: 16px 0 8px;
-  }
-  
-  .card p {
-    color: #666;
-  }
+}
