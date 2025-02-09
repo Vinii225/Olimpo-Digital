@@ -54,7 +54,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-nav i{
+nav .fa-solid{
   display: none;
 }
 
@@ -205,7 +205,7 @@ nav i{
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 20px 50px;
   background-color: #EBEBEB;
 }
 
@@ -291,6 +291,9 @@ nav i{
 
 /* RESPONSIVIDADE */
 @media (max-width: 1024px) {
+  nav .fa-solid{
+    display: none;
+  }
   main #inicio{
     flex-direction: column;
   }
@@ -307,8 +310,11 @@ nav i{
 @media (max-width: 768px) {
   nav{
     display: flex;
-    justify-content: space-around;
-    gap: 30%;
+    gap: 50%
+  }
+  nav .fa-solid{
+    display: block;
+    font-size: 30px;
   }
   nav ul {
     display: none;
@@ -347,5 +353,11 @@ nav i{
   }
   .footer1 .sobrenos {
     width: 80%;
+  }
+}
+@media (max-width: 440px) {
+  nav{
+    display: flex;
+    gap: 25%
   }
 }
