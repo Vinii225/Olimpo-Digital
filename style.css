@@ -106,7 +106,6 @@ nav .fa-solid {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
   margin: 40px auto;
   max-width: 1200px;
   width: 95%;
@@ -428,7 +427,11 @@ footer {
 @media (max-width: 440px) {
   nav {
     display: flex;
-    gap: 25%;
+    gap: 23%;
+  }
+  .sobre iframe {
+    width: 90%;
+    height: 200px;
   }
   #inicio iframe {
     width: 100%;
