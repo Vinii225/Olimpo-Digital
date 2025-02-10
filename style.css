@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ebebeb;
+  background-color: #000000;
   padding: 3px;
   position: fixed;
   top: 0;
@@ -29,6 +29,7 @@ nav {
 
 nav h1 {
   margin-left: 20px;
+  color: #fff;
 }
 
 nav ul {
@@ -46,12 +47,21 @@ nav ul li {
 }
 
 nav ul li a {
-  color: black;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #000;
+  background-color: #fff;
+  color: #000;
   text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background-color: #666;
+  color: #fff;
 }
 
 nav .fa-solid{
@@ -90,24 +100,54 @@ nav .fa-solid{
 .welcome p {
   text-align: justify;
   margin: 20px;
+  line-height: 1.8;
+  font-size: 1.1em;
 }
 
 /* SEÇÃO SOBRE */
 .sobre {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-direction: column; ;
   padding: 20px;
-  text-align: center;
-}
-.sobre div{
-  max-width: 800px;
-    margin: 0 auto;
+  margin: 40px auto;
+  max-width: 1200px;
+  width: 95%;
 }
 
 .sobre h1 {
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.sobre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.coluna-esquerda, .coluna-direita {
+  flex: 1;
+  width: 100;
+  padding: 0 15px;
+}
+
+.coluna-esquerda p, .coluna-direita p {
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 1.8;
+  font-size: 1.1em;
+}
+
+.sobre div{
+  max-width: none;
+    margin: 0 auto;
 }
 
 .sobre p {
@@ -126,17 +166,21 @@ nav .fa-solid{
 }
 
 
-/* SECTION DEUSES/ HEROIS */
+/* SECTION DEUSES / HEROIS */
 #deuses{
   margin: 40px auto;
   padding: 20px 0px;
   margin-bottom: 60px;
+  line-height: 1.8;
+  font-size: 1.1em;
 }
 
 #herois {
   margin: 40px auto;
   padding: 20px 0px;
   margin-top: 60px;
+  line-height: 1.8;
+  font-size: 1.1em;
 }
 
 #deuses .card-container {
@@ -146,7 +190,6 @@ nav .fa-solid{
   gap: 15px;
   max-width: 90%;
   margin: 0 auto;
-
 }
 
 #deuses .card {
@@ -159,10 +202,15 @@ nav .fa-solid{
   margin-bottom: 40px;
 }
 
+#deuses .card h3, #deuses .card p {
+  margin: 16px 0 8px;
+  text-align: center;
+}
+
 #herois .card-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 15px;
   max-width: 80%;
   margin: 0 auto;
@@ -172,11 +220,16 @@ nav .fa-solid{
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
-  width: 100%;
+  width: calc(33.33% - 10px);
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-top: 40px;
-  margin-bottom: 15px;
+  margin-bottom: 40px;
+}
+
+#herois .card:hover, #deuses .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
@@ -187,10 +240,31 @@ nav .fa-solid{
 
 .card h3 {
   margin: 16px 0 8px;
+  text-align: center;
+}
+
+#deuses .card p{
+  color: #666;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1em;
+  margin: 20px 0;
+}
+
+#herois .card p {
+  color: #666;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1em;
+  margin: 20px 0;
 }
 
 .card p {
   color: #666;
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.1em;
+  margin: 20px 0;
 }
 
 
@@ -239,6 +313,7 @@ nav .fa-solid{
   text-align: center;
   margin-bottom: 20px;
   margin: 20px auto;
+
 }
 
 
