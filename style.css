@@ -232,9 +232,10 @@ nav .fa-solid {
 }
 
 .card img {
-  width: 100%;
+  width: 70%;
   height: auto;
   border-radius: 8px 8px 0 0;
+  height: 35%;
 }
 
 .card h3 {
