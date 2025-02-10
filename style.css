@@ -7,12 +7,11 @@ body {
   font-style: normal;
   padding-top: 50px;
 }
-.titulo{
+.titulo {
   flex-basis: 100%;
   text-align: center;
   margin: 20px;
 }
-
 
 /* NAV BAR */
 nav {
@@ -64,10 +63,9 @@ nav ul li a:hover {
   color: #fff;
 }
 
-nav .fa-solid{
+nav .fa-solid {
   display: none;
 }
-
 
 /* IMAGEM ABAIXO DO NAV*/
 .img1 {
@@ -76,7 +74,6 @@ nav .fa-solid{
   object-fit: cover;
   object-position: center;
 }
-
 
 /* SEÇÃO INICIO */
 #inicio {
@@ -132,29 +129,31 @@ nav .fa-solid{
   padding: 0 10px;
 }
 
-.coluna-esquerda, .coluna-direita {
+.coluna-esquerda,
+.coluna-direita {
   flex: 1;
   width: 100;
   padding: 0 15px;
 }
 
-.coluna-esquerda p, .coluna-direita p {
+.coluna-esquerda p,
+.coluna-direita p {
   text-align: justify;
   margin: 20px 0;
   line-height: 1.8;
   font-size: 1.1em;
 }
 
-.sobre div{
+.sobre div {
   max-width: none;
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .sobre p {
   text-align: justify;
   margin: 20px;
 }
-.sobre iframe{
+.sobre iframe {
   width: 100%;
   max-width: 700px;
   height: 400px;
@@ -165,9 +164,8 @@ nav .fa-solid{
   border-radius: 8px;
 }
 
-
 /* SECTION DEUSES / HEROIS */
-#deuses{
+#deuses {
   margin: 40px auto;
   padding: 20px 0px;
   margin-bottom: 60px;
@@ -202,7 +200,8 @@ nav .fa-solid{
   margin-bottom: 40px;
 }
 
-#deuses .card h3, #deuses .card p {
+#deuses .card h3,
+#deuses .card p {
   margin: 16px 0 8px;
   text-align: center;
 }
@@ -226,7 +225,8 @@ nav .fa-solid{
   margin-bottom: 40px;
 }
 
-#herois .card:hover, #deuses .card:hover {
+#herois .card:hover,
+#deuses .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -243,7 +243,7 @@ nav .fa-solid{
   text-align: center;
 }
 
-#deuses .card p{
+#deuses .card p {
   color: #666;
   text-align: justify;
   line-height: 1.8;
@@ -267,87 +267,82 @@ nav .fa-solid{
   margin: 20px 0;
 }
 
+/* FOOTER */
+footer {
+  background-color: #ebebeb;
+}
 
- /* FOOTER */
- footer {
-  background-color: #EBEBEB;
- }
-
-.footer1{
+.footer1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 50px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .footer1 .sobrenos {
   width: 45%;
   text-align: center;
   margin: 0;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .footer1 .social {
   width: 45%;
   text-align: center;
   margin: 0;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
-.footer1 h1{
+.footer1 h1 {
   text-indent: 5px;
 }
 
-.footer1 p{
+.footer1 p {
   text-align: justify;
 }
 
-
 /* SOBRE NÓS */
-.sobrenos{
+.sobrenos {
   width: 100%;
   max-width: 400px;
   text-align: center;
   margin-bottom: 20px;
   margin: 20px auto;
-
 }
 
-
 /* FOOTER ICONS */
-.social{
+.social {
   width: 100%;
   text-align: center;
 }
 
-.social ul{
+.social ul {
   display: flex;
   justify-content: center;
- padding: 0px;
- list-style: none;
+  padding: 0px;
+  list-style: none;
   color: black;
 }
 
-.social h1{
+.social h1 {
   flex-basis: 100%;
 }
 
-.social i{
+.social i {
   color: black;
   font-size: 32px;
   margin: 0 10px;
 }
 
-.social i:hover{
+.social i:hover {
   color: #666;
 }
 
-
 /* FOOTER IFPB */
-.footer2{
+.footer2 {
   display: flex;
   justify-content: center;
   padding: 5px;
@@ -355,21 +350,21 @@ nav .fa-solid{
   background-color: black;
 }
 
-.footer2 a{
+.footer2 a {
   color: white;
   text-decoration: none;
 }
 
-.footer2 a:hover{
+.footer2 a:hover {
   text-decoration: underline;
 }
 
 /* RESPONSIVIDADE */
 @media (max-width: 1024px) {
-  nav .fa-solid{
+  nav .fa-solid {
     display: none;
   }
-  main #inicio{
+  main #inicio {
     flex-direction: column;
   }
   .card-container {
@@ -383,11 +378,11 @@ nav .fa-solid{
 }
 
 @media (max-width: 768px) {
-  nav{
+  nav {
     display: flex;
-    gap: 50%
+    gap: 50%;
   }
-  nav .fa-solid{
+  nav .fa-solid {
     display: block;
     font-size: 30px;
   }
@@ -403,15 +398,15 @@ nav .fa-solid{
   .img1 {
     height: 400px;
   }
-  #inicio iframe{
+  #inicio iframe {
     width: 100%;
     height: 300px;
   }
-  .sobre iframe{
+  .sobre iframe {
     width: 100%;
     height: 300px;
   }
-  .sobre div{
+  .sobre div {
     margin: 30px 0;
   }
   .card-container {
@@ -423,7 +418,7 @@ nav .fa-solid{
   .card {
     width: 300px;
   }
-  .footer1{
+  .footer1 {
     flex-direction: column;
   }
   .footer1 .sobrenos {
@@ -431,8 +426,8 @@ nav .fa-solid{
   }
 }
 @media (max-width: 440px) {
-  nav{
+  nav {
     display: flex;
-    gap: 25%
+    gap: 25%;
   }
 }
