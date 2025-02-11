@@ -6,6 +6,8 @@ body {
   font-weight: 400;
   font-style: normal;
   padding-top: 50px;
+  margin: 0;
+  padding: 0;
 }
 .titulo {
   flex-basis: 100%;
@@ -31,18 +33,13 @@ nav h1 {
   color: #fff;
 }
 
-;
 
-
-}
 nav ul {
   display: flex;
   align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
 nav ul li {
@@ -77,6 +74,9 @@ nav .fa-solid {
   height: 800px;
   object-fit: cover;
   object-position: center;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 /* SEÇÃO INICIO */
@@ -87,6 +87,7 @@ nav .fa-solid {
   justify-content: center;
   align-items: center;
   gap: 80px;
+  margin: 0;
 }
 
 .welcome {
