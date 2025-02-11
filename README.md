@@ -15,8 +15,7 @@ O **Olimpo Digital** é um projeto desenvolvido por um grupo de alunos do curso 
 
 ## Contato e Redes Sociais
 Acompanhe nossas atualizações e interaja conosco:
-- 📷 Instagram: [Olimpo Digital](#)
-- 📘 Facebook: [Olimpo Digital](#)
+- 📷 Instagram: https://www.instagram.com/olimpodigital.project?igsh=Y2IxYTZlc2RmNWsy 
 
 
 📌 **Feito com dedicação por um grupo de alunos do curso de Sistemas para Internet do IFPB!**
