@@ -31,6 +31,10 @@ nav h1 {
   color: #fff;
 }
 
+;
+
+
+}
 nav ul {
   display: flex;
   align-items: center;
@@ -232,10 +236,14 @@ nav .fa-solid {
 }
 
 .card img {
-  width: 70%;
-  height: auto;
+  width: 10rem;
   border-radius: 8px 8px 0 0;
-  height: 35%;
+  height: 10rem;
+}
+
+#herois .card img {
+  width: 8rem;
+  height: 8rem;
 }
 
 .card h3 {
