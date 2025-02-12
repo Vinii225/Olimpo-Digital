@@ -78,7 +78,6 @@ nav .fa-solid {
 /* SEÇÃO INICIO */
 #inicio {
   background-color: #ebebeb;
-  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,6 +87,7 @@ nav .fa-solid {
 
 .welcome {
   max-width: 600px;
+  margin: 20px;
   text-align: center;
 }
 
