@@ -29,7 +29,7 @@
         <li><a href="#herois">Heróis e Aventuras</a></li>
         <li><a href="#footer1">Sobre Nós e Nossas Redes</a></li>
       </ul>
-      <i class="fa-solid fa-bars" style="color: aliceblue;"></i>
+      <i class="fa-solid fa-bars" style="color: aliceblue"></i>
     </nav>
 
     <main>
@@ -195,8 +195,8 @@
         <h1 class="titulo">Heróis e suas aventuras</h1>
         <div class="card-container">
           <div class="card">
-            <img src="icons/aquiles.png" alt="Aquiles">
-            <img src="icons/cavalo-de-troia.png" alt="Cavalo de Tróia">
+            <img src="icons/aquiles.png" alt="Aquiles" />
+            <img src="icons/cavalo-de-troia.png" alt="Cavalo de Tróia" />
             <h3>Aquiles e o cavalo de Tróia</h3>
             <p>
               &emsp;&emsp;Aquiles, o maior guerreiro grego, participou da Guerra
@@ -216,8 +216,8 @@
             </p>
           </div>
           <div class="card">
-            <img src="icons/perseu.png" alt="Perseu">
-            <img src="icons/medusa.png" alt="Medusa">
+            <img src="icons/perseu.png" alt="Perseu" />
+            <img src="icons/medusa.png" alt="Medusa" />
             <h3>Perseu Vs Medusa</h3>
             <p>
               &emsp;&emsp;Perseu, filho de Zeus e da mortal Danaê, foi desafiado
@@ -236,8 +236,8 @@
             </p>
           </div>
           <div class="card">
-            <img src="icons/hercules.png" alt="Hércules">
-            <img src="icons/cerberus (1).png" alt="cerberus">
+            <img src="icons/hercules.png" alt="Hércules" />
+            <img src="icons/cerberus (1).png" alt="cerberus" />
             <h3>Os Doze Trabalhos de Hércules</h3>
             <p>
               &emsp;&emsp;Hércules, filho de Zeus e Alcmena, foi o maior herói
@@ -259,21 +259,33 @@
     </main>
 
     <footer>
-      <section class="footer1" id="footer1">
-        <div class="sobrenos">
+      <section class="footer">
+        <div class="footer-section">
           <h1>Sobre Nós</h1>
           <p>
-            &emsp;Olimpo Digital é um projeto desenvolvido por um grupo de
+            Olimpo Digital é um projeto desenvolvido por um grupo de
             estudantes do curso de Sistemas para Internet do Instituto Federal
             da Paraíba (IFPB), com o objetivo de explorar e divulgar a mitologia
             grega de forma interativa e educativa.
           </p>
         </div>
-        <div class="social">
+        <div class="footer-section">
+          <h1>Links</h1>
+          <ul>
+            <li><a href="#">Anuncie</a></li>
+            <li><a href="#">Política de Privacidade</a></li>
+            <li><a href="#">Termos de Uso</a></li>
+            <li><a href="#">Fale Conosco</a></li>
+          </ul>
+        </div>
+        <div class="footer-section-social">
           <h1>Siga-nos</h1>
           <ul>
             <li>
-              <a href="https://www.instagram.com/olimpodigital.project?igsh=Y2IxYTZlc2RmNWsy "><i class="fa-brands fa-instagram"></i></a>
+              <a
+                href="https://www.instagram.com/olimpodigital.project?igsh=Y2IxYTZlc2RmNWsy "
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
             </li>
             <li>
               <a href="#"><i class="fa-brands fa-facebook"></i></a>
@@ -286,17 +298,22 @@
           </ul>
         </div>
       </section>
-      <section class="footer2">
-        <a href="https://www.ifpb.edu.br/"><h1>OlimpoDigital&copy;2025</h1></a>
+      <section class="footer-bottom">
+        <p>
+          Copyright © 2025 Rede OLimpo Digital - Todos os direitos reservados.
+          Proibida a reprodução total ou parcial sem prévia autorização
+          <a href="">(<span class="lei">Inciso I do Artigo 29 Lei 9.610/98</span>)</a>
+        </p>
       </section>
     </footer>
     <script>
-      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("DOMContentLoaded", function () {
         const menuIcon = document.querySelector("nav .fa-solid");
         const navList = document.querySelector("nav ul");
-    
-        menuIcon.addEventListener("click", function() {
-          navList.style.display = navList.style.display === "flex" ? "none" : "flex";
+
+        menuIcon.addEventListener("click", function () {
+          navList.style.display =
+            navList.style.display === "flex" ? "none" : "flex";
         });
       });
     </script>

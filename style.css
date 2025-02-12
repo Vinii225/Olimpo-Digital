@@ -1,14 +1,15 @@
+/* Global Styles */
 * {
   font-family: "Merriweather", serif;
 }
+
 body {
-  margin: 0px;
+  margin: 0;
   font-weight: 400;
   font-style: normal;
-  padding-top: 50px;
-  margin: 0;
   padding: 0;
 }
+
 .titulo {
   flex-basis: 100%;
   text-align: center;
@@ -34,7 +35,6 @@ nav h1 {
   color: #fff;
 }
 
-
 nav ul {
   display: flex;
   align-items: center;
@@ -51,7 +51,6 @@ nav ul li a {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px;
-  background-color: #000;
   background-color: #fff;
   color: #000;
   text-decoration: none;
@@ -69,7 +68,7 @@ nav .fa-solid {
   display: none;
 }
 
-/* IMAGEM ABAIXO DO NAV*/
+/* IMAGEM ABAIXO DO NAV */
 .img1 {
   width: 100%;
   object-fit: cover;
@@ -132,7 +131,7 @@ nav .fa-solid {
 .coluna-esquerda,
 .coluna-direita {
   flex: 1;
-  width: 100;
+  width: 100%;
   padding: 0 15px;
 }
 
@@ -153,59 +152,27 @@ nav .fa-solid {
   text-align: justify;
   margin: 20px;
 }
+
 .sobre iframe {
   width: 100%;
   max-width: 700px;
   height: 400px;
   margin: 20px 0;
   border: 2px solid #000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  border-radius: 8px;
 }
 
 /* SECTION DEUSES / HEROIS */
 #deuses {
   margin: 40px auto;
-  padding: 20px 0px;
-  margin-bottom: 60px;
-  line-height: 1.8;
-  font-size: 1.1em;
+  padding: 20px 0;
 }
 
 #herois {
   margin: 40px auto;
-  padding: 20px 0px;
-  margin-top: 60px;
-  line-height: 1.8;
-  font-size: 1.1em;
+  padding: 20px 0;
 }
 
-#deuses .card-container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  max-width: 90%;
-  margin: 0 auto;
-}
-
-#deuses .card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  width: calc(27% - 10px);
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-}
-
-#deuses .card h3,
-#deuses .card p {
-  margin: 16px 0 8px;
-  text-align: center;
-}
-
+#deuses .card-container,
 #herois .card-container {
   display: flex;
   justify-content: center;
@@ -215,6 +182,7 @@ nav .fa-solid {
   margin: 0 auto;
 }
 
+#deuses .card,
 #herois .card {
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -225,8 +193,8 @@ nav .fa-solid {
   margin-bottom: 40px;
 }
 
-#herois .card:hover,
-#deuses .card:hover {
+#deuses .card:hover,
+#herois .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -248,22 +216,8 @@ nav .fa-solid {
   text-align: center;
 }
 
-#deuses .card p {
-  color: #666;
-  text-align: justify;
-  line-height: 1.8;
-  font-size: 1.1em;
-  margin: 20px 0;
-}
-
-#herois .card p {
-  color: #666;
-  text-align: justify;
-  line-height: 1.8;
-  font-size: 1.1em;
-  margin: 20px 0;
-}
-
+#deuses .card p,
+#herois .card p,
 .card p {
   color: #666;
   text-align: justify;
@@ -277,90 +231,99 @@ footer {
   background-color: #ebebeb;
 }
 
-.footer1 {
+.footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px 50px;
-  background-color: #ebebeb;
 }
 
-.footer1 .sobrenos {
-  width: 45%;
-  text-align: center;
+.footer .footer-section {
+  width: 30%;
+  text-align: left;
   margin: 0;
-  background-color: #ebebeb;
+  position: relative;
 }
 
-.footer1 .social {
-  width: 45%;
-  text-align: center;
-  margin: 0;
-  background-color: #ebebeb;
-}
-
-.footer1 h1 {
+.footer h1 {
   text-indent: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.footer h1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 
 .footer1 p {
   text-align: justify;
+  margin-top: 20px;
 }
 
-/* SOBRE NÓS */
-.sobrenos {
-  width: 100%;
-  max-width: 400px;
-  text-align: center;
-  margin-bottom: 20px;
-  margin: 20px auto;
-}
-
-/* FOOTER ICONS */
-.social {
-  width: 100%;
-  text-align: center;
-}
-
-.social ul {
-  display: flex;
-  justify-content: center;
-  padding: 0px;
+.footer-section ul {
   list-style: none;
-  color: black;
+  padding: 0;
+  margin-left: 20px;
+  text-align: left;
 }
 
-.social h1 {
-  flex-basis: 100%;
+.footer-section ul li {
+  margin-bottom: 10px;
 }
 
-.social i {
+.footer-section ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-section-social ul {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section-social i {
   color: black;
   font-size: 32px;
   margin: 0 10px;
 }
 
-.social i:hover {
+.footer-section-social i:hover {
   color: #666;
 }
 
-/* FOOTER IFPB */
-.footer2 {
-  display: flex;
-  justify-content: center;
+/* FOOTER Direitos */
+.footer-bottom {
+  text-align: center;
   padding: 5px;
   color: white;
   background-color: black;
 }
 
-.footer2 a {
+.footer-bottom a {
   color: white;
   text-decoration: none;
 }
 
-.footer2 a:hover {
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom .lei {
   text-decoration: underline;
 }
 
@@ -382,9 +345,6 @@ footer {
     padding: 10px 20px;
     text-decoration: none;
   }
-  .img1{
-    margin-top: 60px;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -394,8 +354,9 @@ footer {
   main #inicio {
     flex-direction: column;
   }
-  .img1{
+  .img1 {
     margin-top: 60px;
+    height: 400px;
   }
   .card-container {
     flex-direction: row;
@@ -407,7 +368,7 @@ footer {
   }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 768px) {
   nav {
     display: flex;
     justify-content: space-between;
@@ -422,8 +383,6 @@ footer {
   nav ul {
     display: none;
     flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
     position: absolute;
     top: 50px;
     right: 0;
@@ -442,8 +401,15 @@ footer {
   nav h1 {
     margin-left: 0;
   }
-  .img1{
-    margin-top: 60px;
+  nav {
+    justify-content: center;
+  }
+  .img1 {
+    margin-top: 30px;
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   #inicio iframe {
     width: 100%;
@@ -468,16 +434,22 @@ footer {
   .footer1 {
     flex-direction: column;
   }
-  .footer1 .sobrenos {
+  .footer1 .footer-section {
     width: 80%;
   }
 }
+
 @media (max-width: 570px) {
   nav {
     display: flex;
+    gap: 23%;
   }
-  .img1{
+  .img1 {
     margin-top: 60px;
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
   .sobre iframe {
     width: 90%;
