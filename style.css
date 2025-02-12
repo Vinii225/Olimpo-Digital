@@ -369,6 +369,25 @@ footer {
 }
 
 /* RESPONSIVIDADE */
+@media (min-width: 769px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    text-align: left;
+  }
+  nav ul li {
+    margin: 0 10px;
+  }
+  nav ul li a {
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+}
+
 @media (max-width: 1024px) {
   nav .fa-solid {
     display: none;
