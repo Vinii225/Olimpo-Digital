@@ -290,5 +290,15 @@
         <a href="https://www.ifpb.edu.br/"><h1>IFPB&copy;2025</h1></a>
       </section>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const menuIcon = document.querySelector("nav .fa-solid");
+        const navList = document.querySelector("nav ul");
+    
+        menuIcon.addEventListener("click", function() {
+          navList.style.display = navList.style.display === "flex" ? "none" : "flex";
+        });
+      });
+    </script>
   </body>
 </html>
