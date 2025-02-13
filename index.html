@@ -8,7 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -136,9 +142,8 @@
 
       <section id="deuses">
         <h1 class="titulo">Principais Deuses</h1>
-        <!-- Mover o título para fora do card-container -->
         <div class="card-container">
-          <div class="card">
+          <div class="card-deus">
             <img src="icons/zeus.png" alt="Zeus" />
             <h3>Zeus</h3>
             <p>
@@ -146,7 +151,7 @@
               símbolo de sua autoridade e governa os céus com justiça e poder.
             </p>
           </div>
-          <div class="card">
+          <div class="card-deus">
             <img src="icons/poseidon.png" alt="Poseidon" />
             <h3>Poseidon</h3>
             <p>
@@ -155,7 +160,7 @@
               mundo.
             </p>
           </div>
-          <div class="card">
+          <div class="card-deus">
             <img src="icons/hades.png" alt="Hades" />
             <h3>Hades</h3>
             <p>
@@ -164,7 +169,7 @@
               mistério e silêncio eterno.
             </p>
           </div>
-          <div class="card">
+          <div class="card-deus">
             <img src="icons/atena.png" alt="Atena" />
             <h3>Atena</h3>
             <p>
@@ -172,7 +177,7 @@
               justiça, sempre buscando a solução mais justa e estratégica.
             </p>
           </div>
-          <div class="card">
+          <div class="card-deus">
             <img src="icons/hera.png" alt="Hera" />
             <h3>Hera</h3>
             <p>
@@ -180,7 +185,7 @@
               com sua autoridade implacável, zelando pela fidelidade e harmonia.
             </p>
           </div>
-          <div class="card">
+          <div class="card-deus">
             <img src="icons/ares.png" alt="Ares" />
             <h3>Ares</h3>
             <p>
@@ -194,7 +199,7 @@
       <section id="herois">
         <h1 class="titulo">Heróis e suas aventuras</h1>
         <div class="card-container">
-          <div class="card">
+          <div class="card-heroi">
             <img src="icons/aquiles.png" alt="Aquiles" />
             <img src="icons/cavalo-de-troia.png" alt="Cavalo de Tróia" />
             <h3>Aquiles e o cavalo de Tróia</h3>
@@ -215,7 +220,7 @@
               vulnerável.
             </p>
           </div>
-          <div class="card">
+          <div class="card-heroi">
             <img src="icons/perseu.png" alt="Perseu" />
             <img src="icons/medusa.png" alt="Medusa" />
             <h3>Perseu Vs Medusa</h3>
@@ -235,7 +240,7 @@
               sua grande jornada heroica.
             </p>
           </div>
-          <div class="card">
+          <div class="card-heroi">
             <img src="icons/hercules.png" alt="Hércules" />
             <img src="icons/cerberus (1).png" alt="cerberus" />
             <h3>Os Doze Trabalhos de Hércules</h3>
@@ -263,10 +268,10 @@
         <div class="footer-section">
           <h1>Sobre Nós</h1>
           <p>
-            Olimpo Digital é um projeto desenvolvido por um grupo de
-            estudantes do curso de Sistemas para Internet do Instituto Federal
-            da Paraíba (IFPB), com o objetivo de explorar e divulgar a mitologia
-            grega de forma interativa e educativa.
+            Olimpo Digital é um projeto desenvolvido por um grupo de estudantes
+            do curso de Sistemas para Internet do Instituto Federal da Paraíba
+            (IFPB), com o objetivo de explorar e divulgar a mitologia grega de
+            forma interativa e educativa.
           </p>
         </div>
         <div class="footer-section">
@@ -280,7 +285,7 @@
         </div>
         <div class="footer-section-social">
           <h1>Siga-nos</h1>
-          <ul>
+          <ul class="social-icons">
             <li>
               <a
                 href="https://www.instagram.com/olimpodigital.project?igsh=Y2IxYTZlc2RmNWsy "
@@ -290,6 +295,10 @@
             <li>
               <a href="#"><i class="fa-brands fa-facebook"></i></a>
             </li>
+            <li><a><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a><i class="fa-brands fa-youtube"></i></a></li>
+
             <li>
               <a href="https://github.com/Vinii225/Olimpo-Digital"
                 ><i class="fa-brands fa-github"></i
@@ -302,20 +311,11 @@
         <p>
           Copyright © 2025 Rede OLimpo Digital - Todos os direitos reservados.
           Proibida a reprodução total ou parcial sem prévia autorização
-          <a href="">(<span class="lei">Inciso I do Artigo 29 Lei 9.610/98</span>)</a>
+          <a href=""
+            >(<span class="lei">Inciso I do Artigo 29 Lei 9.610/98</span>)</a
+          >
         </p>
       </section>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const menuIcon = document.querySelector("nav .fa-solid");
-        const navList = document.querySelector("nav ul");
-
-        menuIcon.addEventListener("click", function () {
-          navList.style.display =
-            navList.style.display === "flex" ? "none" : "flex";
-        });
-      });
-    </script>
   </body>
 </html>

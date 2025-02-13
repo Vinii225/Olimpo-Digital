@@ -1,6 +1,6 @@
 /* Global Styles */
 * {
-  font-family: "Merriweather", serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 body {
@@ -8,14 +8,42 @@ body {
   font-weight: 400;
   font-style: normal;
   padding: 0;
+  font-size: 16px;
 }
 
 .titulo {
   flex-basis: 100%;
   text-align: center;
   margin: 20px;
-  font-family: "Merriweather", serif;
+  font-family: "Cinzel", serif;
   font-weight: 700; /* Bold */
+}
+
+/* Cinzel Font Classes */
+.cinzel-regular {
+  font-family: "Cinzel", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-bold {
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-black {
+  font-family: "Cinzel", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Josefin Sans Font Classes */
+.josefin-regular {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px; /* Aumenta o tamanho da fonte regular */
 }
 
 /* NAV BAR */
@@ -35,8 +63,8 @@ nav {
 nav h1 {
   margin-left: 20px;
   color: #fff;
-  font-family: "Merriweather", serif;
-  font-weight: 900; /* negrito */
+  font-family: "Cinzel", serif;
+  font-weight: 900; /* Black */
 }
 
 nav ul {
@@ -61,8 +89,8 @@ nav ul li a {
   border: 2px solid #fff;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: "Merriweather", serif;
-  font-weight: 400; /* regular */
+  font-family: "Cinzel", serif;
+  font-weight: 400; /* Regular */
 }
 
 nav ul li a:hover {
@@ -98,17 +126,17 @@ nav .fa-solid {
 
 .welcome h1 {
   margin-bottom: 20px;
-  font-family: "Merriweather", serif;
-  font-weight: 700; /* meio negrito */
+  font-family: "Cinzel", serif;
+  font-weight: 700; /* Bold */
 }
 
 .welcome p {
   text-align: justify;
   margin: 20px;
   line-height: 1.8;
-  font-size: 1.1em;
-  font-family: "Merriweather", serif;
-  font-weight: 400; /* regular */
+  font-size: 18px; /* Aumenta o tamanho da fonte regular */
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; /* Regular */
 }
 
 /* SEÇÃO SOBRE */
@@ -125,8 +153,8 @@ nav .fa-solid {
   text-align: center;
   margin-bottom: 40px;
   width: 100%;
-  font-family: "Merriweather", serif;
-  font-weight: 900; /* negrito */
+  font-family: "Cinzel", serif;
+  font-weight: 900; /* Black */
 }
 
 .sobre-container {
@@ -152,9 +180,9 @@ nav .fa-solid {
   text-align: justify;
   margin: 20px 0;
   line-height: 1.8;
-  font-size: 1.1em;
-  font-family: "Merriweather", serif;
-  font-weight: 400; /* regular */
+  font-size: 18px; /* Aumenta o tamanho da fonte regular */
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; /* Regular */
 }
 
 .sobre div {
@@ -186,8 +214,7 @@ nav .fa-solid {
   padding: 20px 0;
 }
 
-#deuses .card-container,
-#herois .card-container {
+.card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -196,51 +223,57 @@ nav .fa-solid {
   margin: 0 auto;
 }
 
-#deuses .card,
-#herois .card {
+.card-deus {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
-  width: 80%;
+  width: 25%;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 40px;
-}
-
-#deuses .card:hover,
-#herois .card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card img {
-  width: 10rem;
-  border-radius: 8px 8px 0 0;
-  height: 10rem;
+.card-heroi {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  width: 80%; /* Ajusta a largura dos cards */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-#herois .card img {
-  width: 8rem;
-  height: 8rem;
+.card-deus:hover,
+.card-heroi:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.card h3 {
+.card-deus img,
+.card-heroi img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 16px;
+}
+
+.card-deus h3,
+.card-heroi h3 {
   margin: 16px 0 8px;
   text-align: center;
-  font-family: "Merriweather", serif;
-  font-weight: 700; /* meio negrito (negrito é 900) */
+  font-family: "Cinzel", serif;
+  font-weight: 700; /* Bold */
 }
 
-#deuses .card p,
-#herois .card p,
-.card p {
+.card-deus p,
+.card-heroi p {
   color: #666;
-  text-align: justify;
+  text-align: center;
   line-height: 1.8;
-  font-size: 1.1em;
-  font-family: "Merriweather", serif;
-  font-weight: 400; /* regular */
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; /* Regular */
   margin: 20px 0;
 }
 
@@ -269,8 +302,8 @@ footer {
   text-indent: 5px;
   margin-bottom: 10px;
   position: relative;
-  font-family: "Merriweather", serif;
-  font-weight: 900; /* negrito, + pesado */
+  font-family: "Cinzel", serif;
+  font-weight: 900; /* Black */
 }
 
 .footer h1::after {
@@ -287,8 +320,9 @@ footer {
 .footer1 p {
   text-align: justify;
   margin-top: 20px;
-  font-family: "Merriweather", serif;
-  font-weight: 400; /* regular */
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 18px; /* Aumenta o tamanho da fonte regular */
 }
 
 .footer-section ul {
@@ -305,8 +339,9 @@ footer {
 .footer-section ul li a {
   text-decoration: none;
   color: #000;
-  font-family: "Merriweather", serif;
-  font-weight: 400; /* regular */
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400; /* Regular */
+  font-size: 18px; /* Aumenta o tamanho da fonte regular */
 }
 
 .footer-section ul li a:hover {
@@ -315,15 +350,21 @@ footer {
 
 .footer-section-social ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   padding: 0;
   list-style: none;
 }
 
+.footer-section-social ul li {
+  width: 33.33%; /* Cada ícone ocupa um terço da largura */
+  text-align: center; /* Centraliza os ícones */
+}
+
 .footer-section-social i {
   color: black;
   font-size: 32px;
-  margin: 0 10px;
+  margin: 10px 0; /* Espaçamento vertical entre os ícones */
 }
 
 .footer-section-social i:hover {
@@ -386,8 +427,9 @@ footer {
     flex-direction: row;
     align-items: stretch;
   }
-  .card {
-    width: 80%;
+  .card-deus,
+  .card-heroi {
+    width: calc(50% - 30px); /* Ajusta a largura dos cards */
     margin-bottom: 20px;
   }
 }
@@ -449,11 +491,9 @@ footer {
   .card-container {
     justify-content: center;
   }
-  #deuses .card {
+  .card-deus,
+  .card-heroi {
     width: 80%;
-  }
-  .card {
-    width: 300px;
   }
   .footer1 {
     flex-direction: column;
@@ -481,6 +521,5 @@ footer {
   }
   #inicio iframe {
     width: 100%;
-    height: 300px;
   }
 }
