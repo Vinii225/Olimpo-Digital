@@ -1,0 +1,26 @@
+/* Cinzel Font Classes */
+.cinzel-regular {
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .cinzel-bold {
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .cinzel-black {
+    font-family: "Cinzel", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  /* Josefin Sans Font Classes */
+  .josefin-regular {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px; /* Aumenta o tamanho da fonte regular */
+  }

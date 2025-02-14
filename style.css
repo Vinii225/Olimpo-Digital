@@ -19,42 +19,13 @@ body {
   font-weight: 700; /* Bold */
 }
 
-/* Cinzel Font Classes */
-.cinzel-regular {
-  font-family: "Cinzel", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.cinzel-bold {
-  font-family: "Cinzel", serif;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.cinzel-black {
-  font-family: "Cinzel", serif;
-  font-weight: 900;
-  font-style: normal;
-}
-
-/* Josefin Sans Font Classes */
-.josefin-regular {
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px; /* Aumenta o tamanho da fonte regular */
-}
-
 /* NAV BAR */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  background-color: #000000;
-  padding: 5px;
-  position: fixed;
+  background-color: #000;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -83,8 +54,7 @@ nav ul li a {
   display: inline-block;
   padding: 10px 20px;
   margin: 5px;
-  background-color: #fff;
-  color: #000;
+  color: #ffffff !important;
   text-decoration: none;
   border: 2px solid #fff;
   border-radius: 5px;
@@ -94,8 +64,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #666;
-  color: #fff;
+  background-color: #fff;
+  color: #000 !important;
 }
 
 nav .fa-solid {
@@ -103,40 +73,29 @@ nav .fa-solid {
 }
 
 /* IMAGEM ABAIXO DO NAV */
+.img1-container {
+  position: relative;
+  width: 100%;
+}
+
 .img1 {
   width: 100%;
   object-fit: cover;
+  height: 93vh;
+  filter: brightness(50%);
 }
 
-/* SEÇÃO INICIO */
-#inicio {
-  background-color: #ebebeb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  margin: 0;
-}
-
-.welcome {
-  max-width: 600px;
-  margin: 20px;
-  text-align: center;
-}
-
-.welcome h1 {
-  margin-bottom: 20px;
+.img1-container .welcome-text {
+  position: absolute;
+  top: 1%;
+  margin: 30%;
+  transform: translate(-50%, -50%);
+  color: #fff;
   font-family: "Cinzel", serif;
   font-weight: 700; /* Bold */
-}
-
-.welcome p {
-  text-align: justify;
-  margin: 20px;
-  line-height: 1.8;
-  font-size: 18px; /* Aumenta o tamanho da fonte regular */
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400; /* Regular */
+  font-size: 2em;
+  text-align: left;
+  z-index: 1;
 }
 
 /* SEÇÃO SOBRE */
@@ -168,39 +127,26 @@ nav .fa-solid {
   padding: 0 10px;
 }
 
-.coluna-esquerda,
-.coluna-direita {
-  flex: 1;
-  width: 100%;
-  padding: 0 15px;
-}
-
-.coluna-esquerda p,
-.coluna-direita p {
+.coluna{
   text-align: justify;
   margin: 20px 0;
   line-height: 1.8;
-  font-size: 18px; /* Aumenta o tamanho da fonte regular */
+  font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400; /* Regular */
 }
 
-.sobre div {
-  max-width: none;
-  margin: 0 auto;
-}
-
-.sobre p {
-  text-align: justify;
-  margin: 20px;
-}
-
 .sobre iframe {
-  width: 100%;
+  width: 1500px;
   max-width: 700px;
   height: 400px;
   margin: 20px 0;
   border: 2px solid #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* SECTION DEUSES / HEROIS */
@@ -421,7 +367,7 @@ footer {
   }
   .img1 {
     margin-top: 60px;
-    height: 400px;
+    height: 80vh;
   }
   .card-container {
     flex-direction: row;
@@ -429,7 +375,7 @@ footer {
   }
   .card-deus,
   .card-heroi {
-    width: calc(50% - 30px); /* Ajusta a largura dos cards */
+    width: calc(50% - 30px);
     margin-bottom: 20px;
   }
 }
@@ -472,7 +418,7 @@ footer {
   }
   .img1 {
     margin-top: 30px;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     object-fit: cover;
     object-position: center;
