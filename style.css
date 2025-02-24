@@ -14,7 +14,7 @@ body {
 .titulo {
   flex-basis: 100%;
   text-align: center;
-  margin: 20px;
+  margin: 20px 0;
   font-family: "Cinzel", serif;
   font-weight: 700; /* Bold */
 }
@@ -57,10 +57,10 @@ nav ul li a {
   color: #ffffff !important;
   text-decoration: none;
   border: 2px solid #fff;
-  border-radius: 5px;
+  border-radius: 50px;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-family: "Cinzel", serif;
-  font-weight: 400; /* Regular */
+  font-weight: 700; /* Regular */
 }
 
 nav ul li a:hover {
@@ -223,6 +223,76 @@ nav .fa-solid {
   margin: 20px 0;
 }
 
+/* Comentários */
+.comment {
+  padding: 15px;
+  margin-bottom: 20px;
+  margin: 10px 170px 10px 170px;
+}
+
+.comment h3 {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.comment p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Linha Horizontal para Dividir Comentários */
+.comment-divider {
+  border: 0;
+  height: 1px;
+  background-color: #000; /* Cor preta */
+  margin: 10px 170px 10px 170px;
+}
+
+/* Formulário de Comentários */
+.comment-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ebebeb;
+}
+
+.comment-form .form-group {
+  margin-bottom: 15px;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.comment-form button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #333;
+}
+
 /* FOOTER */
 footer {
   background-color: #ebebeb;
@@ -267,8 +337,8 @@ footer {
   text-align: justify;
   margin-top: 20px;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400; /* Regular */
-  font-size: 18px; /* Aumenta o tamanho da fonte regular */
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .footer-section ul {
@@ -286,8 +356,8 @@ footer {
   text-decoration: none;
   color: #000;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400; /* Regular */
-  font-size: 18px; /* Aumenta o tamanho da fonte regular */
+  font-weight: 400;
+  font-size: 18px;
 }
 
 .footer-section ul li a:hover {
@@ -303,14 +373,14 @@ footer {
 }
 
 .footer-section-social ul li {
-  width: 33.33%; /* Cada ícone ocupa um terço da largura */
-  text-align: center; /* Centraliza os ícones */
+  width: 33.33%;
+  text-align: center;
 }
 
 .footer-section-social i {
   color: black;
   font-size: 32px;
-  margin: 10px 0; /* Espaçamento vertical entre os ícones */
+  margin: 10px 0;
 }
 
 .footer-section-social i:hover {
