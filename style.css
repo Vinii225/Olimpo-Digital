@@ -1,256 +1,232 @@
 /* Global Styles */
-* {
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
-
-body {
-  margin: 0;
-  font-weight: 400;
-  font-style: normal;
-  padding: 0;
-  font-size: 16px;
-}
-
-.titulo {
-  flex-basis: 100%;
-  text-align: center;
-  margin: 20px 0;
+.titulos{
   font-family: "Cinzel", serif;
-  font-weight: 700; /* Bold */
+  font-weight: 900;
+  font-style: normal;
+}
+.titulos-section{
+  font-family: "Cinzel", serif;
+  font-weight: 700;
 }
 
-/* NAV BAR */
-nav {
+/* Nav Bar e Header */
+
+nav .container-nav{
+  display: flex;
+  align-items: center;
+  background-image: url(../img/img1.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+nav .navegacao{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  background-color: #000;
-  top: 0;
+  flex-basis: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  position: fixed;
   width: 100%;
   z-index: 1000;
 }
-
-nav h1 {
-  margin-left: 20px;
-  color: #fff;
-  font-family: "Cinzel", serif;
-  font-weight: 900; /* Black */
-}
-
-nav ul {
+nav .navegacao .nav-links{
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  width: 40%;
+  padding-right: 20px;
+  list-style: none;
 }
-
-nav ul li {
-  margin-right: 30px;
-}
-
-nav ul li a {
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 5px;
-  color: #ffffff !important;
+nav .navegacao h1{
+  padding-left: 20px;
+  color: #fff;
   text-decoration: none;
-  border: 2px solid #fff;
-  border-radius: 50px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  font-family: "Cinzel", serif;
-  font-weight: 700; /* Regular */
-}
-
-nav ul li a:hover {
-  background-color: #fff;
-  color: #000 !important;
-}
-
-nav .fa-solid {
-  display: none;
-}
-
-/* IMAGEM ABAIXO DO NAV */
-.img1-container {
-  position: relative;
-  width: 100%;
-}
-
-.img1 {
-  width: 100%;
-  object-fit: cover;
-  height: 93vh;
-  filter: brightness(50%);
-}
-
-.img1-container .welcome-text {
-  position: absolute;
-  top: 1%;
-  margin: 30%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-family: "Cinzel", serif;
-  font-weight: 700; /* Bold */
   font-size: 2em;
-  text-align: left;
-  z-index: 1;
 }
-
-/* SEÇÃO SOBRE */
-.sobre {
+nav .navegacao .nav-links li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+nav .navegacao .nav-links li a:hover{
+  color: #000000;
+  border-bottom: 3px solid #000000;
+}
+nav .navegacao .tres-{
+  display: none;
+  list-style: none;
+  color: whitesmoke;
+  font-size: 30px;
+}
+nav .container-nav .welcome{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 40px auto;
-  max-width: 1200px;
-  width: 95%;
+  flex-wrap: wrap;
+  width: 55%;
+  padding-left: 20px;
+  color: #fff;
 }
-
-.sobre h1 {
-  text-align: center;
-  margin-bottom: 40px;
-  width: 100%;
-  font-family: "Cinzel", serif;
-  font-weight: 900; /* Black */
+nav .container-nav .welcome h1{
+  padding: 0px;
+  padding-bottom: 20px;
+  flex-basis: 100%;
+  color: #fff;
+  font-size: 2em;
 }
+nav .container-nav .welcome p{
+  font-size: 20px;
+  text-align: left;
+  /* text-indent: 20px; */
+}
+/* Seção Sobre */
 
-.sobre-container {
+main .sobre{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 10px;
+  width: 80%;
+  margin: 40px auto;
 }
-
-.coluna{
+main .sobre h1{
+  text-align: center;
+  margin-bottom: 40px;
+  width: 100%;
+}
+main .sobre p{
   text-align: justify;
-  margin: 20px 0;
   line-height: 1.8;
   font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 400; /* Regular */
+  font-weight: 400;
 }
-
-.sobre iframe {
-  width: 1500px;
-  max-width: 700px;
+main .sobre iframe{
+  width: 70%;
   height: 400px;
-  margin: 20px 0;
   border: 2px solid #000;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
-/* SECTION DEUSES / HEROIS */
-#deuses {
-  margin: 40px auto;
-  padding: 20px 0;
-}
+/* Section Deuses / Herois */
 
-#herois {
-  margin: 40px auto;
-  padding: 20px 0;
+.espacamento-deuses{
+  height: 110px;
 }
-
-.card-container {
+main #deuses{
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 15px;
+}
+main #deuses .deuses{
+  display: flex;
+  flex-wrap: wrap;
+  width: 83%;
+}
+main #deuses .deuses h1{
+  text-align: center;
+  flex-basis: 100%;
+}
+main #deuses .deuses .card-deuses{
+  width: 30%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main #deuses .deuses .card-deuses img{
+  display: block;
+  margin: auto;
+  width: 40%;
+}
+main #deuses .deuses h3{
+  text-align: center;
+  flex-basis: 100%;
+}
+main #deuses .deuses .card-deuses h3{
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  padding-top: 15px;
+}
+.espacamento-herois{
+  height: 110px;
+}
+main #herois{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+main #herois h1{
+  text-align: center;
+  flex-basis: 100%;
+}
+main #herois .card-herois{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main #herois .card-herois div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin: 0 auto;
 }
-
-.card-deus {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  width: 25%;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+main #herois .card-herois div img{
+  margin-bottom: -40px;
+  width: 15%;
+  object-fit: cover;
 }
-
-.card-heroi {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  width: 80%; /* Ajusta a largura dos cards */
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 40px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-deus:hover,
-.card-heroi:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.card-deus img,
-.card-heroi img {
-  width: 100px;
-  height: 100px;
-  margin-bottom: 16px;
-}
-
-.card-deus h3,
-.card-heroi h3 {
-  margin: 16px 0 8px;
+main #herois .card-herois h3{
+  flex-basis: 100%;
   text-align: center;
   font-family: "Cinzel", serif;
-  font-weight: 700; /* Bold */
+  font-weight: 700;
 }
-
-.card-deus p,
-.card-heroi p {
-  color: #666;
-  text-align: center;
-  line-height: 1.8;
-  font-size: 16px;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400; /* Regular */
-  margin: 20px 0;
+main #herois .card-herois p{
+  flex-basis: 100%;
+  text-align: left;
 }
-
-/* Comentários */
-.comment {
-  padding: 15px;
-  margin-bottom: 20px;
-  margin: 10px 170px 10px 170px;
+.card-deuses p,
+.card-herois p {
+color: #666;
+text-align: center;
+line-height: 1.8;
+font-size: 16px;
+font-family: "Josefin Sans", sans-serif;
+font-weight: 400;
+margin: 20px 0;
 }
-
-.comment h3 {
-  margin: 0 0 10px;
-  font-weight: bold;
+.card-deuses:hover,
+.card-herois:hover {
+transform: translateY(-10px);
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
 }
+/* Formulario De Comentarios */
 
-.comment p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-/* Linha Horizontal para Dividir Comentários */
-.comment-divider {
-  border: 0;
-  height: 1px;
-  background-color: #000; /* Cor preta */
-  margin: 10px 170px 10px 170px;
-}
-
-/* Formulário de Comentários */
 .comment-form {
-  max-width: 600px;
+  width: 50%;
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -293,36 +269,41 @@ nav .fa-solid {
   background-color: #333;
 }
 
-/* FOOTER */
-footer {
-  background-color: #ebebeb;
-}
+/* Footer */
 
-.footer {
+.espacamento-footer-top{
+  height: 40px;
+}
+footer{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px 50px;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #ebebeb;
+  color: black
 }
-
-.footer .footer-section {
-  width: 30%;
-  text-align: left;
-  margin: 0;
-  position: relative;
+footer .footer-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
 }
-
-.footer h1 {
+footer .footer-top div{
+  width: 27%;
+}
+footer .footer-top div ul{
+  list-style: none;
+}
+footer .footer-top h1{
   text-indent: 5px;
   margin-bottom: 10px;
   position: relative;
   font-family: "Cinzel", serif;
-  font-weight: 900; /* Black */
+  font-weight: 900;
 }
-
-.footer h1::after {
+footer .footer-top  h1::after{
   content: "";
   display: block;
   width: 100%;
@@ -332,210 +313,166 @@ footer {
   bottom: -5px;
   left: 0;
 }
-
-.footer1 p {
-  text-align: justify;
+footer .footer-top .sobre-nos p{
+  text-align: left;
   margin-top: 20px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
-  font-size: 18px;
 }
-
-.footer-section ul {
-  list-style: none;
-  padding: 0;
-  margin-left: 20px;
-  text-align: left;
+footer .footer-top .links ul{
+  margin: 16px 0px 16px 20px;
 }
-
-.footer-section ul li {
+footer .footer-top .links li{
   margin-bottom: 10px;
 }
-
-.footer-section ul li a {
+footer .footer-top .links a{
+  color: black;
   text-decoration: none;
-  color: #000;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
 }
-
-.footer-section ul li a:hover {
-  text-decoration: underline;
-}
-
-.footer-section-social ul {
-  display: flex;
+footer .footer-top .redes-sociais ul{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+  grid-template-rows: repeat(2, auto);
+  width: 70%;
   flex-wrap: wrap;
-  justify-content: flex-start;
   padding: 0;
-  list-style: none;
 }
-
-.footer-section-social ul li {
-  width: 33.33%;
+footer .footer-top .redes-sociais ul li{
+  width: calc(100%/3 -1px);
   text-align: center;
+  margin: 0 10px;
 }
-
-.footer-section-social i {
+footer .footer-top .redes-sociais ul li i{
   color: black;
   font-size: 32px;
-  margin: 10px 0;
+  margin: 10px 0; 
 }
-
-.footer-section-social i:hover {
-  color: #666;
-}
-
-/* FOOTER Direitos */
-.footer-bottom {
+footer .footer-bottom{
+  flex-basis: 100%;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
   text-align: center;
-  padding: 5px;
-  color: white;
-  background-color: black;
 }
 
-.footer-bottom a {
-  color: white;
-  text-decoration: none;
-}
+/* Responsividade */
 
-.footer-bottom a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom .lei {
-  text-decoration: underline;
-}
-
-/* RESPONSIVIDADE */
-@media (min-width: 769px) {
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    background-color: transparent;
-    width: auto;
-    text-align: left;
+@media (max-width: 940px){
+  main #deuses .deuses .card-deuses{
+      width: 46.5%;
   }
-  nav ul li {
-    margin: 0 10px;
-  }
-  nav ul li a {
-    color: #000;
-    padding: 10px 20px;
-    text-decoration: none;
+  .comment-form {
+      width: 50%;
   }
 }
-
-@media (max-width: 1024px) {
-  nav .fa-solid {
-    display: none;
+@media (max-width: 768px){
+  nav .navegacao{
+      align-items: center;
+      height: 70px;
   }
-  main #inicio {
-    flex-direction: column;
+  nav .navegacao h1{
+      padding-top: 0px;
+      font-size: 1.9em;
   }
-  .img1 {
-    margin-top: 60px;
-    height: 80vh;
+  nav .navegacao .nav-links a{
+      font-size: 0.4em;
   }
-  .card-container {
-    flex-direction: row;
-    align-items: stretch;
+  nav .navegacao .nav-links{
+      width: 52%;
+      padding: 0px 10px 0px 0px;
   }
-  .card-deus,
-  .card-heroi {
-    width: calc(50% - 30px);
-    margin-bottom: 20px;
+  nav .navegacao .nav-links{
+      display: none;
   }
-}
-
-@media (max-width: 768px) {
-  nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  nav .navegacao .tres-{
+      display: flex;
+      padding-right: 20px;
   }
-  nav .fa-solid {
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-    margin-left: 20px;
+  nav .container-nav .welcome{
+      width: 70%;
+      padding-left: 20px;
   }
-  nav ul {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: #000;
-    width: 100%;
-    text-align: center;
+  main .sobre iframe{
+      width: 100%;
   }
-  nav ul li {
-    margin: 10px 0;
+  main #deuses .deuses .card-deuses{
+      width: 100%;
   }
-  nav ul li a {
-    color: #000;
-    padding: 10px 0;
-    text-decoration: none;
+  main #deuses .deuses .card-deuses img{
+      width: 20%;
   }
-  nav h1 {
-    margin-left: 0;
+  main #herois .card-herois{
+      width: 83.3%;
   }
-  nav {
-    justify-content: center;
+  .comment-form {
+      width: 70%;
   }
-  .img1 {
-    margin-top: 30px;
-    height: 100vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+  footer .footer-top div{
+      width: 100%;
   }
-  #inicio iframe {
-    width: 100%;
-    height: 300px;
+  footer .footer-top .sobre-nos p{
+      padding-left: 20px;
   }
-  .sobre iframe {
-    width: 100%;
-    height: 300px;
-  }
-  .sobre div {
-    margin: 30px 0;
-  }
-  .card-container {
-    justify-content: center;
-  }
-  .card-deus,
-  .card-heroi {
-    width: 80%;
-  }
-  .footer1 {
-    flex-direction: column;
-  }
-  .footer1 .footer-section {
-    width: 80%;
+  footer .footer-top .redes-sociais ul{
+      width: 50%;
   }
 }
-
-@media (max-width: 570px) {
-  nav {
-    display: flex;
-    gap: 23%;
+@media (max-width: 592px){
+  nav .navegacao .nav-links{
+      width: 100%;
+      padding: 0;
   }
-  .img1 {
-    margin-top: 60px;
-    height: 40vh;
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
+  nav .navegacao .tres-{
+      display: flex;
+      padding-right: 20px;
   }
-  .sobre iframe {
-    width: 90%;
-    height: 200px;
+  nav .container-nav .welcome{
+      width: 100%;
+      padding: 10px;
   }
-  #inicio iframe {
-    width: 100%;
+  nav .container-nav .welcome h1{
+      text-align: center;
+      font-size: 2em;
+  }
+  main .sobre{
+      width: 92%;
+      margin: 40px auto;
+  }
+  main .sobre iframe{
+      width: 100%;
+      height: 200px;
+  }
+  main #deuses .deuses{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+  }
+  main #deuses .deuses .card-deuses{
+      width: 90%;
+  }
+  main #deuses .deuses .card-deuses img{
+      width: 20%;
+  }
+  main #herois .card-herois{
+      width: 90%;
+  }
+  .comment-form {
+      width: 90%;
+  }
+  footer .footer-top div{
+      width: 100%;
+  }
+  footer .footer-top h1{
+      padding-top: 15px;
+  }
+  footer .footer-top .sobre-nos p{
+      padding-left: 20px;
+  }
+  footer .footer-top .redes-sociais ul{
+      padding-left: 10px;
+      width: 50%;
+  }
+  footer .footer-top .redes-sociais ul li i{
+      font-size: 27px;
   }
 }
