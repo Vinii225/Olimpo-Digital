@@ -347,12 +347,19 @@ footer .footer-top .redes-sociais ul li i{
   font-size: 32px;
   margin: 10px 0; 
 }
+footer .footer-top .redes-sociais ul li i:hover{
+  cursor: pointer;
+  color: #666;
+}
 footer .footer-bottom{
   flex-basis: 100%;
   padding: 20px;
   background-color: #000;
   color: #fff;
   text-align: center;
+}
+.footer-top .links a:hover {
+  text-decoration: underline;
 }
 
 /* Responsividade */
