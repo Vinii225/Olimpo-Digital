@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 .titulos{
   font-family: "Cinzel", serif;
   font-weight: 900;
@@ -36,7 +39,18 @@ nav .navegacao{
   backdrop-filter: blur(10px);
   position: fixed;
   width: 100%;
+  transition: transform 0.3s ease-in-out;
   z-index: 1000;
+}
+.navegacao.visible{
+  transform: translateY(0);
+    /* visibility: visible;
+    opacity: 1; */
+}
+.navegacao.hidden {
+  transform: translateY(-100%);
+    /* visibility: hidden;
+    opacity: 0; */
 }
 nav .navegacao .nav-links{
   display: flex;
