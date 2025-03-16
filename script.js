@@ -1,10 +1,9 @@
 let lastScrollY = window.scrollY;
-let scrolledToSection = false; 
+let scrolledToSection = false;
 
 window.addEventListener("scroll", () => {
     const navbar = document.querySelector(".navegacao");
 
-    
     if (!scrolledToSection) {
         if (window.scrollY < lastScrollY) {
             navbar.classList.add("visible");
@@ -17,7 +16,6 @@ window.addEventListener("scroll", () => {
 
     lastScrollY = window.scrollY;
 });
-
 
 document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", (event) => {
