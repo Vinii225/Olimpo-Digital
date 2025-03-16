@@ -2,7 +2,6 @@
 
 *{
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -138,40 +137,7 @@ main .sobre iframe{
 .espacamento-deuses{
   height: 110px;
 }
-main #deuses{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-main #deuses .deuses{
-  display: flex;
-  flex-wrap: wrap;
-  width: 83%;
-}
-main #deuses .deuses h1{
-  text-align: center;
-  flex-basis: 100%;
-}
-main #deuses .deuses .card-deuses{
-  width: 30%;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-main #deuses .deuses .card-deuses img{
-  display: block;
-  margin: auto;
-  width: 40%;
-}
-main #deuses .deuses h3{
-  text-align: center;
-  flex-basis: 100%;
-}
-main #deuses .deuses .card-deuses h3{
+.deuses-h3{
   font-family: "Cinzel", serif;
   font-weight: 700;
   padding-top: 15px;
@@ -208,8 +174,8 @@ main #herois .card-herois div {
   width: 100%;
 }
 main #herois .card-herois div img{
-  margin-bottom: -40px;
-  width: 15%;
+  margin: 0px 20px -40px 20px;
+  width: 8%;
   object-fit: cover;
 }
 main #herois .card-herois h3{
@@ -222,7 +188,7 @@ main #herois .card-herois p{
   flex-basis: 100%;
   text-align: left;
 }
-.card-deuses p,
+.deuses-p,
 .card-herois p {
 color: #666;
 text-align: center;
@@ -232,7 +198,6 @@ font-family: "Josefin Sans", sans-serif;
 font-weight: 400;
 margin: 20px 0;
 }
-.card-deuses:hover,
 .card-herois:hover {
 transform: translateY(-10px);
 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;

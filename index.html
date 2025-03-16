@@ -17,6 +17,7 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"/>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <title>Olimpo Digital</title>
 </head>
 <body>
@@ -57,38 +58,38 @@
         ></iframe>
     </section>
     <div class="espacamento-deuses" id="id-deuses"></div>
-    <section id = "deuses">
-        <div class="deuses">
-            <h1 class="titulos-section">Principais Deuses</h1>
-            <div class="card-deuses">
-                <img src="icons/zeus.png" alt="Zeus">
-                <h3>Zeus</h3>
-                <p>&emsp;&emsp;O rei dos deuses do Olimpo, empunha o trovão como símbolo de sua autoridade e governa os céus com justiça e poder.</p>
+    <section class="flex justify-center items-center ">
+        <div class="flex flex-wrap justify-center items-stretch gap-[20px] w-[83%]">
+            <h1 class="titulos-section basis-full text-center text-2xl">Principais Deuses</h1>
+            <div class="flex flex-col justify-start items-center w-[calc(33.333%-20px)] p-[10px] border border-gray-300 rounded-[10px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:transform hover:-translate-y-2.5 hover:shadow-lg">
+                <img class="w-1/4 h-auto" src="icons/zeus.png" alt="Zeus">
+                <h3 class="deuses-h3" >Zeus</h3>
+                <p class="deuses-p">&emsp;&emsp;O rei dos deuses do Olimpo, empunha o trovão como símbolo de sua autoridade e governa os céus com justiça e poder.</p>
             </div>
-            <div class="card-deuses">
-                <img src="icons/poseidon.png" alt="Poseidon">
-                <h3>Poseidon</h3>
-                <p>&emsp;&emsp;Poseidon, o deus dos mares, domina as águas profundas com seu tridente, trazendo tanto calmaria quanto tempestades ao mundo.</p>
+            <div class="flex flex-col justify-start items-center w-[calc(33.333%-20px)] p-[10px] border border-gray-300 rounded-[10px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:transform hover:-translate-y-2.5 hover:shadow-lg">
+                <img class="w-1/4 h-auto " src="icons/poseidon.png" alt="Poseidon">
+                <h3 class="deuses-h3">Poseidon</h3>
+                <p class="deuses-p">&emsp;&emsp;Poseidon, o deus dos mares, domina as águas profundas com seu tridente, trazendo tanto calmaria quanto tempestades ao mundo.</p>
             </div>
-            <div class="card-deuses">
-                <img src="icons/hades.png" alt="Hades">
-                <h3>Hades</h3>
-                <p>&emsp;&emsp;O sombrio deus do submundo, reina sobre as almas dos mortos com uma autoridade implacável, governando um reino de mistério e silêncio eterno.</p>
+            <div class="flex flex-col justify-start items-center w-[calc(33.333%-20px)] p-[10px] border border-gray-300 rounded-[10px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:transform hover:-translate-y-2.5 hover:shadow-lg">
+                <img class="w-1/4 h-auto" src="icons/hades.png" alt="Hades">
+                <h3 class="deuses-h3">Hades</h3>
+                <p class="deuses-p">&emsp;&emsp;O sombrio deus do submundo, reina sobre as almas dos mortos com uma autoridade implacável, governando um reino de mistério e silêncio eterno.</p>
             </div>
-            <div class="card-deuses">
-                <img src="icons/atena.png" alt="Atena">
-                <h3>Atena</h3>
-                <p>&emsp;&emsp;Deusa da sabedoria, guia os heróis com inteligência e justiça, sempre buscando a solução mais justa e estratégica.</p>
+            <div class="flex flex-col justify-start items-center w-[calc(33.333%-20px)] p-[10px] border border-gray-300 rounded-[10px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:transform hover:-translate-y-2.5 hover:shadow-lg">
+                <img class="w-1/4 h-auto" src="icons/atena.png" alt="Atena">
+                <h3 class="deuses-h3">Atena</h3>
+                <p class="deuses-p">&emsp;&emsp;Deusa da sabedoria, guia os heróis com inteligência e justiça, sempre buscando a solução mais justa e estratégica.</p>
             </div>
-            <div class="card-deuses">
-                <img src="icons/hera.png" alt="Hera">
-                <h3>Hera</h3>
-                <p>&emsp;&emsp;Rainha dos deuses, protege o matrimônio e a família com sua autoridade implacável, zelando pela fidelidade e harmonia.</p>
+            <div class="flex flex-col justify-start items-center w-[calc(33.333%-20px)] p-[10px] border border-gray-300 rounded-[10px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:transform hover:-translate-y-2.5 hover:shadow-lg">
+                <img class="w-1/4 h-auto" src="icons/hera.png" alt="Hera">
+                <h3 class="deuses-h3">Hera</h3>
+                <p class="deuses-p">&emsp;&emsp;Rainha dos deuses, protege o matrimônio e a família com sua autoridade implacável, zelando pela fidelidade e harmonia.</p>
             </div>
-            <div class="card-deuses">
-                <img src="icons/ares.png" alt="Ares">
-                <h3>Ares</h3>
-                <p>&emsp;&emsp;Deus da guerra, traz o caos e a violência dos campos de batalha, alimentando os conflitos com sua fúria incansável.</p>
+            <div  class="flex flex-col justify-start items-center w-[calc(33.333%-20px)] p-[10px]  border border-gray-300 rounded-[10px] shadow-[0px_4px_8px_0px_rgba(0,0,0,0.1)] transition-all duration-300 ease-in-out hover:transform hover:-translate-y-2.5 hover:shadow-lg">
+                <img class="w-1/4 h-auto" src="icons/ares.png" alt="Ares">
+                <h3 class="deuses-h3">Ares</h3>
+                <p class="deuses-p">&emsp;&emsp;Deus da guerra, traz o caos e a violência dos campos de batalha, alimentando os conflitos com sua fúria incansável.</p>
             </div>
         </div>
     </section>
