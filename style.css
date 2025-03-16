@@ -169,7 +169,7 @@ main #herois .card-herois{
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  width: 80%;
+  width: 90%;
   margin: 20px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -185,7 +185,7 @@ main #herois .card-herois div {
 }
 main #herois .card-herois div img{
   margin: 0px 20px -40px 20px;
-  width: 8%;
+  width: 10%;
   object-fit: cover;
 }
 main #herois .card-herois h3{
@@ -458,11 +458,10 @@ footer .footer-bottom{
 /* Responsividade */
 
 @media (max-width: 940px){
-  main #deuses .deuses .card-deuses{
-      width: 46.5%;
-  }
-  .comment-form {
-      width: 50%;
+  main #herois .card-herois div img{
+    margin: 0px 20px -40px 20px;
+    width: 13%;
+    object-fit: cover;
   }
 }
 @media (max-width: 768px){
@@ -495,17 +494,8 @@ footer .footer-bottom{
   main .sobre iframe{
       width: 100%;
   }
-  main #deuses .deuses .card-deuses{
-      width: 100%;
-  }
-  main #deuses .deuses .card-deuses img{
-      width: 20%;
-  }
   main #herois .card-herois{
-      width: 83.3%;
-  }
-  .comment-form {
-      width: 70%;
+      width: 90%;
   }
   footer .footer-top div{
       width: 100%;
@@ -542,22 +532,13 @@ footer .footer-bottom{
       width: 100%;
       height: 200px;
   }
-  main #deuses .deuses{
-      display: flex;
-      flex-wrap: wrap;
-      width: 100%;
-  }
-  main #deuses .deuses .card-deuses{
-      width: 90%;
-  }
-  main #deuses .deuses .card-deuses img{
-      width: 20%;
-  }
   main #herois .card-herois{
       width: 90%;
   }
-  .comment-form {
-      width: 90%;
+  main #herois .card-herois div img{
+    margin: 0px 20px 0px 20px;
+    width: 10%;
+    object-fit: cover;
   }
   footer .footer-top div{
       width: 100%;
