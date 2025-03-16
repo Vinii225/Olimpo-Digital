@@ -542,8 +542,11 @@ footer .footer-bottom{
   }
   main #herois .card-herois div img{
     margin: 0px 20px 0px 20px;
-    width: 10%;
+    width: 23%;
     object-fit: cover;
+  }
+  .comments-ratings-container{
+    display: none;
   }
   footer .footer-top div{
       width: 100%;
