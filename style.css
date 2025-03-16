@@ -213,7 +213,9 @@ transform: translateY(-10px);
 box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2) !important;
 }
 /* Formulario De Comentarios */
-
+.espacamento-coment{
+  height: 50px;
+}
 .comment {
   background-color: #000; /* Fundo preto */
   color: #fff; /* Texto branco */
@@ -462,6 +464,9 @@ footer .footer-bottom{
     margin: 0px 20px -40px 20px;
     width: 13%;
     object-fit: cover;
+  }
+  .comments-ratings-container{
+    display: none;
   }
 }
 @media (max-width: 768px){
