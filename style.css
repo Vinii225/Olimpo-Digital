@@ -29,7 +29,7 @@ html {
 nav .container-nav{
   display: flex;
   align-items: center;
-  background-image: url(../img/img.png) !important;
+  background-image: url(img/imagem.png) !important;
   background-size: cover;
   background-position: center;
   height: 100vh;
