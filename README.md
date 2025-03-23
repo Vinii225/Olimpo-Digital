@@ -12,7 +12,8 @@ O **Olimpo Digital** é um projeto desenvolvido por um grupo de alunos do curso 
 ## Tecnologias Utilizadas
 - HTML
 - CSS
-
+- JS
+  
 ## Contato e Redes Sociais
 Acompanhe nossas atualizações e interaja conosco:
 - 📷 Instagram: https://www.instagram.com/olimpodigital.project?igsh=Y2IxYTZlc2RmNWsy 
